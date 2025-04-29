@@ -10,20 +10,12 @@ const GreetingCompontes = () => {
     }
 
   return (
-    <div className={styles.header}>
-   <label htmlFor='nameInput'>Enter your name:</label>
-   <input 
-   id='nameInput'
-   type='text'
-   placeholder='Type your name'
-   value={name}
-   onChange={handleChange}
-   className={styles.input}
-
-   />
-
-   {name && <h2 > Hello, {name}!</h2>}
-    </div>
+    <div>
+    <p>Enter your name:</p>
+  <input value={input} onChange={onInput} />
+  {!!input.length&&<p>Hello {input}!</p>}
+  <button onClick={onClear}>Clear</button>
+  </div>
   )
 }
 
