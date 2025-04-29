@@ -11,7 +11,7 @@ const GreetingCompontes = () => {
 
   return (
     <div className={styles.header}>
-   <label htmlFor='nameInput'>enter your name</label>
+   <label htmlFor='nameInput'>Enter your name:</label>
    <input 
    id='nameInput'
    type='text'
